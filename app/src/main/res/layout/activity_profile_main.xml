@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg"
+    tools:context=".features.profile.ProfileMainActivity">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/bannerImageView"
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/gradient" />
+
+                <com.google.android.material.imageview.ShapeableImageView
+                    android:layout_width="120dp"
+                    android:layout_height="120dp"
+                    android:layout_below="@id/bannerImageView"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentEnd="true"
+                    android:layout_marginStart="59dp"
+                    android:layout_marginTop="-81dp"
+                    android:layout_marginEnd="232dp"
+                    android:src="@drawable/img5" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/bannerImageView"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:paddingHorizontal="24dp">
+
+                <!--name-->
+                <TextView
+                    android:id="@+id/tvDocName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:fontFamily="@font/poppins_medium"
+                    android:singleLine="true"
+                    android:textColor="@color/blue"
+                    android:textSize="26sp"
+                    android:textStyle="bold" />
+
+                <!--specialization-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins"
+                        android:singleLine="true"
+                        android:text="Specialization"
+                        android:textAllCaps="true"
+                        android:textColor="@color/blue"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:id="@+id/glSpecializations"
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal">
+
+                        </LinearLayout>
+
+                    </HorizontalScrollView>
+
+                </LinearLayout>
+
+                <!--mobile number -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins"
+                        android:singleLine="true"
+                        android:text="Mobile Number"
+                        android:textAllCaps="true"
+                        android:textColor="@color/blue"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvDocMobileNumber"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext"
+                        android:fontFamily="@font/poppins"
+                        android:padding="15sp"
+                        android:singleLine="true"
+                        android:textColor="@color/blue"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <!-- Address -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="vertical">
+
+                    <TextView
+                        android:id="@+id/addressLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins"
+                        android:singleLine="true"
+                        android:text="Address"
+                        android:textAllCaps="true"
+                        android:textColor="@color/blue"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvDocAddress"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext"
+                        android:fontFamily="@font/poppins"
+                        android:padding="15sp"
+                        android:singleLine="false"
+                        android:textColor="@color/blue"
+                        android:textStyle="bold" />
+
+
+                </LinearLayout>
+
+                <!--email -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:id="@+id/emailTextViewLabel"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins"
+                        android:singleLine="true"
+                        android:text="Email Address"
+                        android:textAllCaps="true"
+                        android:textColor="@color/blue"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvDocEmail"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext"
+                        android:fontFamily="@font/poppins"
+                        android:padding="15sp"
+                        android:singleLine="true"
+                        android:textColor="@color/blue"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <!--experience -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins"
+                        android:singleLine="true"
+                        android:text="Experience"
+                        android:textAllCaps="true"
+                        android:textColor="@color/blue"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvExperience"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext"
+                        android:fontFamily="@font/poppins"
+                        android:padding="15sp"
+                        android:singleLine="true"
+                        android:textColor="@color/blue"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+                <!--charges -->
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginBottom="15dp"
+                    android:orientation="vertical">
+
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:fontFamily="@font/poppins"
+                        android:singleLine="true"
+                        android:text="Charges"
+                        android:textAllCaps="true"
+                        android:textColor="@color/blue"
+                        android:textSize="10sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/tvCharges"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/edittext"
+                        android:fontFamily="@font/poppins"
+                        android:padding="15sp"
+                        android:singleLine="true"
+                        android:textColor="@color/blue"
+                        android:textStyle="bold" />
+                </LinearLayout>
+
+
+                <RadioGroup
+                    android:id="@+id/rg"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal">
+
+                    <RadioButton
+                        android:id="@+id/btnEnglish"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:buttonTint="@color/blue"
+                        android:text="English"
+                        android:textColor="@color/blue"
+                        android:textSize="16sp" />
+
+                    <RadioButton
+                        android:id="@+id/btnHindi"
+                        android:layout_width="wrap_content"
+                        android:layout_height="48dp"
+                        android:layout_marginStart="16dp"
+                        android:buttonTint="@color/blue"
+                        android:text="Hindi"
+                        android:textColor="@color/blue"
+                        android:textSize="16sp" />
+
+                </RadioGroup>
+
+                <Button
+                    android:id="@+id/btnUpdate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/edittext"
+                    android:backgroundTint="@null"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:padding="10dp"
+                    android:text="Update"
+                    android:textAllCaps="false"
+                    android:textColor="@color/blue"
+                    android:textSize="17dp" />
+
+                <Button
+                    android:id="@+id/btnLogout"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginVertical="20dp"
+                    android:background="@drawable/edittext"
+                    android:backgroundTint="@null"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:padding="10dp"
+                    android:text="Logout"
+                    android:textAllCaps="false"
+                    android:textColor="@color/blue"
+                    android:textSize="17dp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

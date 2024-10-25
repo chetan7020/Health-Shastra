@@ -1,0 +1,212 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/activity_bg"
+    android:orientation="vertical"
+    android:paddingHorizontal="15dp"
+    tools:context=".features.patients.CreateReportActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <!--title-->
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="3dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="0dp"
+            android:fontFamily="@font/poppins_bold"
+            android:text="Add Report"
+            android:textColor="@color/blue"
+            android:textSize="30sp" />
+
+    </LinearLayout>
+
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <!--desc-->
+                <EditText
+                    android:id="@+id/etDescription"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/edittext"
+                    android:fontFamily="@font/poppins_medium"
+                    android:hint="Description"
+                    android:padding="16dp" />
+
+                <!--symptoms-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center">
+
+                        <EditText
+                            android:id="@+id/etSymptoms"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.8"
+                            android:background="@drawable/edittext"
+                            android:fontFamily="@font/poppins_medium"
+                            android:hint="Symptoms"
+                            android:padding="16dp" />
+
+                        <ImageView
+                            android:id="@+id/ivAddSymptom"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/baseline_add_circle_24" />
+
+                    </LinearLayout>
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp">
+
+                        <LinearLayout
+                            android:id="@+id/llSymptoms"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" />
+
+                    </HorizontalScrollView>
+
+                </LinearLayout>
+
+                <!--medicines-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center">
+
+                        <EditText
+                            android:id="@+id/etMedicines"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.8"
+                            android:background="@drawable/edittext"
+                            android:fontFamily="@font/poppins_medium"
+                            android:hint="Medicines"
+                            android:padding="16dp" />
+
+                        <ImageView
+                            android:id="@+id/ivAddMedicine"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/baseline_add_circle_24" />
+
+                    </LinearLayout>
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp">
+
+                        <LinearLayout
+                            android:id="@+id/llMedicines"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" />
+
+                    </HorizontalScrollView>
+
+                </LinearLayout>
+
+                <!--measures-->
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:gravity="center">
+
+                        <EditText
+                            android:id="@+id/etMeasures"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="0.8"
+                            android:background="@drawable/edittext"
+                            android:fontFamily="@font/poppins_medium"
+                            android:hint="Measures"
+                            android:padding="16dp" />
+
+                        <ImageView
+                            android:id="@+id/ivAddMeasure"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:src="@drawable/baseline_add_circle_24" />
+
+                    </LinearLayout>
+
+                    <HorizontalScrollView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="5dp">
+
+                        <LinearLayout
+                            android:id="@+id/llMeasures"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal" />
+
+                    </HorizontalScrollView>
+
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/btnAddReport"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="30dp"
+                    android:background="@drawable/edittext"
+                    android:fontFamily="@font/poppins_semibold"
+                    android:padding="15dp"
+                    android:text="Add Report"
+                    android:textAllCaps="false"
+                    android:textColor="@color/blue"
+                    android:textSize="17dp" />
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </androidx.core.widget.NestedScrollView>
+
+</LinearLayout>

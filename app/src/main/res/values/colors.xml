@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="purple_200">#FFBB86FC</color>
+    <color name="purple_500">#FF6200EE</color>
+    <color name="purple_700">#FF3700B3</color>
+    <color name="teal_200">#FF03DAC5</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+
+    <color name="purple100">#6A41CC</color>
+    <color name="purple80">#724ADD</color>
+    <color name="purple60">#A395F0</color>
+    <color name="purple40">#DCDAFA</color>
+    <color name="purple20">#F5F4FE</color>
+
+    <color name="green100">#58F4C2</color>
+    <color name="green80">#9EFCD8</color>
+    <color name="green60">#CCFFE9</color>
+    <color name="green40">#EAFFF7</color>
+    <color name="green20">#F4FFFB</color>
+
+    <color name="grey100">#2C3131</color>
+    <color name="grey80">#4B5352</color>
+    <color name="grey60">#667472</color>
+    <color name="grey40">#ABB5B3</color>
+    <color name="grey20">#E5E8E7</color>
+    <color name="dark_grey">#a6a9b6</color>
+
+    <color name="secondary_white">#d5d5d5</color>
+    <color name="cl_black">#152731</color>
+    <color name="cl_green">#3fd18c</color>
+    <color name="grey">#80768899</color>
+    <color name="cl_red">#ff5a5a</color>
+
+    <color name="cl_faint_green">#4CAF50</color> <!-- Faint green color -->
+    <color name="cl_normal">#FF5722</color> <!-- Normal color (secondary) -->
+    <color name="cl_normal_variant">#FF7043</color> <!-- Slight variant of normal color -->
+
+    <color name="blue">#DF0067FF</color>
+    <color name="light_blue">#D30067FF</color>
+    <color name="red">#f95454</color>
+    <color name="green">#15c05b</color>
+    <color name="yellow">#efc10a</color>
+    <color name="activity_bg">#f2f5fb</color>
+
+</resources>

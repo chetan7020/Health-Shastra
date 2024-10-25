@@ -1,0 +1,24 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.Test1" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Primary brand color. (Green as primary) -->
+        <item name="colorPrimary">@color/blue</item>
+        <item name="colorPrimaryVariant">@color/blue</item>
+        <item name="colorOnPrimary">@color/white</item> <!-- Text color on primary background -->
+
+        <!-- Secondary brand color. (Normal) -->
+        <item name="colorSecondary">@color/cl_normal</item> <!-- Define this in colors.xml -->
+        <item name="colorSecondaryVariant">@color/cl_normal_variant</item>
+        <item name="colorOnSecondary">@color/black</item> <!-- Text color on secondary background -->
+
+        <!-- Background color -->
+        <item name="android:colorBackground">@color/white</item> <!-- Background should be normal, not green -->
+
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">?attr/colorPrimaryVariant</item>
+
+        <!-- Customize your theme here. -->
+    </style>
+
+
+</resources>
